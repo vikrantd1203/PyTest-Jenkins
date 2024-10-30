@@ -9,6 +9,7 @@ pipeline {
                     sh 'source env/bin/activate' // Activates the virtual environment on Mac/Linux
                     // Install dependencies and run tests
                     sh 'pip3 install -r requirements.txt'
+                    sh 'pip3 install browserstack-sdk==1.22.5'
                     sh 'browserstack-sdk pytest -s tests/bstack-sample-test.py'
                 }
             }
