@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('setup') {
             steps {
-                browserstack(credentialsId: '456789') {
+                browserstack(credentialsId: '833c8871-ab95-4280-9199-9c2469b191d9') {
                     // Set up Python environment and install dependencies
                     sh 'python3 -m venv env' // Creates a virtual environment
                     sh 'source env/bin/activate' // Activates the virtual environment on Mac/Linux
