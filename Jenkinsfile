@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('setup') {
             steps {
-                browserstack(credentialsId: '833c8871-ab95-4280-9199-9c2469b191d9') {
+                browserstack(credentialsId: '') {
                     // Set up Python environment, activate it, install dependencies, and run tests in one step
                     sh '''
                         python3 -m venv env          # Creates a virtual environment
